@@ -1,0 +1,32 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: teste-infra-3108
+  description: testes
+  stack-version-id: 01H96FR1EKFRQHQG1SG6R0Y1JE
+  stack: stack-infra-3108
+spec:
+  type: infra
+  plugins:
+    - name: estudiodeploy/stack-infra-3108@1.0.0/plugin-infra-3108@0.0.4
+      alias: plugin-infra-3108
+      plugin-version-id: 01H96FMZ44BZQ5E4J6VRWEJFWF
+      stack-version-id: 01H96FR1EKFRQHQG1SG6R0Y1JE
+      type: infra
+      inputs:
+        sns_topic_name1: teste-1-2
+        sns_topic_name2: teste-1-3
+      inputs-envs: {}
+      connections:
+        generates:
+          - type: aws-sns-conn
+            selected: CI-3108-2
+            alias: alias-sns-1
+          - type: aws-sns-conn
+            selected: CI-3108-1
+            alias: alias-sns-2
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
