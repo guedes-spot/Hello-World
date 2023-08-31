@@ -7,6 +7,7 @@ metadata:
   stack: stack-infra-3108
 spec:
   type: infra
+  infra-id: 01H96JW3EAR2K9KB2QD09RR7X1
   plugins:
     - name: estudiodeploy/stack-infra-3108@1.0.0/plugin-infra-3108@0.0.4
       alias: plugin-infra-3108
