@@ -1,0 +1,32 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-0109-portal-v2
+  description: testes
+  stack-version-id: 01H98NYADH0JPTY6VX0Y3GP0AK
+  stack: stack-portal-0109-v2
+spec:
+  type: infra
+  plugins:
+    - name: estudiodeploy/stack-portal-0109-v2@1.0.0/plugin-portal-3109-v2@0.0.3
+      alias: plugin-portal-3109-v2
+      plugin-version-id: 01H98NPHV95F9GXTZXBBXQMX86
+      stack-version-id: 01H98NYADH0JPTY6VX0Y3GP0AK
+      type: infra
+      inputs:
+        sns_topic_name1: topico-portal-0109-1
+        sns_topic_name2: topico-portal-0109-2
+      inputs-envs: {}
+      connections:
+        generates:
+          - type: aws-sns-conn
+            selected: topico-0109-v1
+            alias: alias-sns-1
+          - type: aws-sns-conn
+            selected: topico-0109-v2
+            alias: alias-sns-2
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
