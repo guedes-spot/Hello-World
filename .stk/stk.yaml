@@ -1,0 +1,28 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-0103-v1
+  description: testes
+  stack-version-id: 01HQXQQ4WRK3S320JDD663AQ22
+  stack: stack-teste-infra@1.1.0
+spec:
+  type: infra
+  infra-id: 01HQXRBDR678D6F10808KZD60X
+  plugins:
+    - name: fmcs/stack-teste-infra@1.1.0/plugin-infra-0301@0.0.1
+      alias: plugin-infra-0301-1709321856540
+      plugin-version-id: 01HQXMTAWA8Y9GXFE5HPC1VSRT
+      stack-version-id: 01HQXQQ4WRK3S320JDD663AQ22
+      type: infra
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/guedes-spot/Hello-World
