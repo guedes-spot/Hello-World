@@ -8,6 +8,7 @@ metadata:
   stack: stack-teste-infra@1.0.0
 spec:
   type: app
+  app-id: 01HQXQEVF4MAWDWADE8Z2EC4QQ
   plugins:
     - name: fmcs/stack-teste-infra@1.0.0/plugin-infra-app-2902@0.0.1
       alias: plugin-infra-app-2902-1709320920762
