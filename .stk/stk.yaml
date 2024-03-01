@@ -1,0 +1,42 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: aplic-0103-v2
+  description: testes
+  starter: fmcs/stack-teste-infra@1.0.0/starter-app-0103
+  stack-version-id: 01HQTGBFTNDFVWQ9EJ8G7XEV6M
+  stack: stack-teste-infra@1.0.0
+spec:
+  type: app
+  plugins:
+    - name: fmcs/stack-teste-infra@1.0.0/plugin-infra-app-2902@0.0.1
+      alias: plugin-infra-app-2902-1709320920762
+      plugin-version-id: 01HQV2PCSS3PDSKDH4GDHQWFT0
+      stack-version-id: 01HQTGBFTNDFVWQ9EJ8G7XEV6M
+      type: infra
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+    - name: fmcs/stack-teste-infra@1.0.0/plugin-app-0103@0.0.1
+      alias: plugin-app-0103-1709320920744
+      plugin-version-id: 01HQXMH4751C9YAF48XKWSVVES
+      stack-version-id: 01HQTGBFTNDFVWQ9EJ8G7XEV6M
+      type: app
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/guedes-spot/Hello-World

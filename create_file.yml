@@ -1,0 +1,26 @@
+kind: application
+metadata:
+  description: testes
+  name: aplic-0103-v2
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: plugin-app-0103-1709320920744
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      method: GET
+      resource: Client
+    inputs-envs: {}
+    name: fmcs/stack-teste-infra@1.0.0/plugin-app-0103
+  - alias: plugin-infra-app-2902-1709320920762
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      method: GET
+      resource: Client
+    inputs-envs: {}
+    name: fmcs/stack-teste-infra@1.0.0/plugin-infra-app-2902
+  repository: https://github.com/guedes-spot/Hello-World
