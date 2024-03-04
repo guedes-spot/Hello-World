@@ -8,6 +8,7 @@ metadata:
   stack: stack-v1@1.0.0
 spec:
   type: app
+  app-id: 01HR4QXJCR0NQJEX6187B3AGN5
   plugins:
     - name: studio-starter/stack-v1@1.0.0/plug-infra-generates-sns-app-allowed-true@1.0.0
       alias: plug-infra-generates-sns-app-allowed-true-1709556275579
