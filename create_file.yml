@@ -1,0 +1,28 @@
+kind: application
+metadata:
+  description: testes
+  name: aplic-starter-v2
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: plugin-app-v1-1709556275566
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      method: GET
+      resource: Client
+    inputs-envs: {}
+    name: studio-starter/stack-v1@1.0.0/plugin-app-v1
+  - alias: plug-infra-generates-sns-app-allowed-true-1709556275579
+    connections:
+      generates:
+      - alias: sns-generate-alias-1
+        selected: sns-040324
+        type: aws-sns-conn
+      requires: []
+    inputs:
+      topic1_name: topicdefault
+    inputs-envs: {}
+    name: studio-starter/stack-v1@1.0.0/plug-infra-generates-sns-app-allowed-true
+  repository: https://github.com/guedes-spot/Hello-World

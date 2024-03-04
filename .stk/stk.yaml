@@ -1,0 +1,44 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: aplic-starter-v2
+  description: testes
+  starter: studio-starter/stack-v1@1.0.0/starter-app
+  stack-version-id: 01HR4NVWEVNQG1R1DCFRDXDMWP
+  stack: stack-v1@1.0.0
+spec:
+  type: app
+  plugins:
+    - name: studio-starter/stack-v1@1.0.0/plug-infra-generates-sns-app-allowed-true@1.0.0
+      alias: plug-infra-generates-sns-app-allowed-true-1709556275579
+      plugin-version-id: 01HR4NP2ZMS1QMG73BEHZBJZ3D
+      stack-version-id: 01HR4NVWEVNQG1R1DCFRDXDMWP
+      type: infra
+      inputs:
+        topic1_name: topicdefault
+      inputs-envs: {}
+      connections:
+        generates:
+          - type: aws-sns-conn
+            selected: sns-040324
+            alias: sns-generate-alias-1
+        requires: []
+      links:
+        generates: []
+    - name: studio-starter/stack-v1@1.0.0/plugin-app-v1@0.0.1
+      alias: plugin-app-v1-1709556275566
+      plugin-version-id: 01HR4NTXXHST7F4C9XF62N1QSR
+      stack-version-id: 01HR4NVWEVNQG1R1DCFRDXDMWP
+      type: app
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/guedes-spot/Hello-World
