@@ -1,0 +1,17 @@
+kind: application
+metadata:
+  description: testes
+  name: aplic-teste-refaz
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: standart-app-plugin-without-conn-int-1710954604714
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      method: GET
+      resource: Client
+    inputs-envs: {}
+    name: workflow-api-smoke-test/smoke-test@2.1.0/standart-app-plugin-without-conn-int
+  repository: https://github.com/guedes-spot/Hello-World

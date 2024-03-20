@@ -1,0 +1,29 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: aplic-teste-refaz
+  description: testes
+  starter: workflow-api-smoke-test/smoke-test@2.1.0/starter-2
+  stack-version-id: 01HQ6GS9D8JMNEREKK54SJRPS6
+  stack: smoke-test@2.1.0
+spec:
+  type: app
+  plugins:
+    - name: 
+        workflow-api-smoke-test/smoke-test@2.1.0/standart-app-plugin-without-conn-int@0.0.1
+      alias: standart-app-plugin-without-conn-int-1710954604714
+      plugin-version-id: 01HFEJJRECS2FJ41V1PXCK2ZSN
+      stack-version-id: 01HQ6GS9D8JMNEREKK54SJRPS6
+      type: app
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/guedes-spot/Hello-World
