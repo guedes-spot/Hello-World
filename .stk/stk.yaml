@@ -1,0 +1,28 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-falha-20-03
+  description: testes
+  stack-version-id: 01HS90BM5890HWAN17V8E47MZ5
+  stack: global-computed-input-stack@0.0.2
+spec:
+  type: infra
+  infra-id: 01HSEPV2FWW49SD47Y2ZJVFRFW
+  plugins:
+    - name: cli-studio/global-computed-input-stack@0.0.2/gci-infra-plugin@0.0.1
+      alias: gci-infra-plugin-1710964440307
+      plugin-version-id: 01HS90ABBS30C0X6YPCWHQYGDF
+      stack-version-id: 01HS90BM5890HWAN17V8E47MZ5
+      type: infra
+      inputs:
+        project_name: project-name
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs:
+    project_name_sanitized: project_name
+  repository: https://github.com/guedes-spot/Hello-World
