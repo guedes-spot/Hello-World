@@ -8,6 +8,7 @@ metadata:
   stack: smoke-test@2.1.0
 spec:
   type: app
+  app-id: 01HSEDTG3J4VHPCX27NSCHRVMA
   plugins:
     - name: 
         workflow-api-smoke-test/smoke-test@2.1.0/standart-app-plugin-without-conn-int@0.0.1
