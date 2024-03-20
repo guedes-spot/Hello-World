@@ -1,0 +1,26 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-retorn
+  description: testes
+  stack-version-id: 01HQ8KW67MHMMRYHAVAG5V4R2G
+  stack: infra-stack@0.0.2
+spec:
+  type: infra
+  infra-id: 01HSEG6ZRT3XXYSG3NVERE90GM
+  plugins:
+    - name: cli-studio/infra-stack@0.0.2/base-infra@0.0.1
+      alias: base-infra-1710957490475
+      plugin-version-id: 01HKWE0QHHPADT222YQ506X2PE
+      stack-version-id: 01HQ8KW67MHMMRYHAVAG5V4R2G
+      type: infra
+      inputs: {}
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/guedes-spot/Hello-World
