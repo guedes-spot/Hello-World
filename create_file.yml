@@ -1,0 +1,27 @@
+kind: shared-infrastructure
+metadata:
+  description: testes
+  name: infra-falha-21-03-24-teste
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: infra-002-1711030805974
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      method: GET
+      resource: Client
+    inputs-envs: {}
+    name: cli-studio/infra-order-stack@0.1.0/infra-002
+  - alias: infra-003-1711030805979
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      method: GET
+      resource: Client
+    inputs-envs: {}
+    name: cli-studio/infra-order-stack@0.1.0/infra-003
+  repository: https://github.com/guedes-spot/Hello-World
+  stack-qualifier: cli-studio/infra-order-stack@0.1.0
