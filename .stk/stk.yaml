@@ -8,6 +8,7 @@ metadata:
   stack: my-stack@1.1.0
 spec:
   type: app
+  app-id: 01HSGMBZXN1D0HFZCFJZNXNMNN
   plugins:
     - name: cli-studio/my-stack@1.1.0/app-plugin-basic@0.0.1
       alias: app-plugin-basic-1711028958581
