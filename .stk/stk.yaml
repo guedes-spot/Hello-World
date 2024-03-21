@@ -1,0 +1,41 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-sucesso-21-03-24
+  description: testes
+  stack-version-id: 01HRQGVSNRV84DDPZ4S6W0MC1Z
+  stack: infra-order-stack@0.1.0
+spec:
+  type: infra
+  plugins:
+    - name: cli-studio/infra-order-stack@0.1.0/infra-002@0.0.1
+      alias: infra-002-1711030342930
+      plugin-version-id: 01HRQ6070P5SG5ZW35FW453M0Z
+      stack-version-id: 01HRQGVSNRV84DDPZ4S6W0MC1Z
+      type: infra
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+    - name: cli-studio/infra-order-stack@0.1.0/infra-003@0.0.1
+      alias: infra-003-1711030342936
+      plugin-version-id: 01HRQ617P2S85GRY2P48ZRB16Y
+      stack-version-id: 01HRQGVSNRV84DDPZ4S6W0MC1Z
+      type: infra
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/guedes-spot/Hello-World
