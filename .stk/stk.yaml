@@ -1,0 +1,29 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: aplic-sucesso-21-03-24
+  description: testes
+  starter: cli-studio/my-stack@1.1.0/my-starter
+  stack-version-id: 01HRAFYP6NA5FSBBGWWD2P9WAM
+  stack: my-stack@1.1.0
+spec:
+  type: app
+  app-id: 01HSGMBZXN1D0HFZCFJZNXNMNN
+  plugins:
+    - name: cli-studio/my-stack@1.1.0/app-plugin-basic@0.0.1
+      alias: app-plugin-basic-1711028958581
+      plugin-version-id: 01HEWSTQ2FPWKXA0SQ8KKEHHNB
+      stack-version-id: 01HRAFYP6NA5FSBBGWWD2P9WAM
+      type: app
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/guedes-spot/Hello-World
